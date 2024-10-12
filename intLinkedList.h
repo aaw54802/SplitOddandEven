@@ -41,11 +41,9 @@ void intLinkedList::splitEvensOddsList(intLinkedList& evensList, intLinkedList& 
             }
         }
 
-        // Move to the next node
         current = nextNode;
     }
 
-    // Update last and count for both evensList and oddsList
     if (evenTail != nullptr) {
         evensList.last = evenTail;
     }
@@ -56,7 +54,6 @@ void intLinkedList::splitEvensOddsList(intLinkedList& evensList, intLinkedList& 
     }
     oddsList.count = this->count;
 
-    // The original list is now empty
     this->first = nullptr;
     this->last = nullptr;
     this->count = 0;
